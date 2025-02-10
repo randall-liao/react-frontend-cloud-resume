@@ -4,8 +4,6 @@ import {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
-const currentYear = new Date().getFullYear();
-
 const Footer: FC = memo(() => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
     <div className="absolute inset-x-0 -top-4 flex justify-center sm:-top-6">
@@ -20,15 +18,21 @@ const Footer: FC = memo(() => (
         <Socials />
       </div>
       <a
-        className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
-        href="https://reactresume.com">
+        className="-m-2 flex items-center gap-x-1 rounded-md p-2 focus:outline-none focus:ring-2 hover:ring-yellow transition-all duration-300 ease-in-out"
+        href="https://github.com/randall-liao/react-frontend-cloud-resume"
+        target="_blank"
+        rel="noopener noreferrer">
         <BoltIcon className="h-5 w-5 text-yellow" />
-        <span>
-          Provided by <span className="text-white">React</span>
-          <span className="italic text-yellow">Resume</span>
+        <span className="text-sm">
+          The source code for this website is available on <span className="text-white font-semibold">GitHub</span>.
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright {currentYear} Tim Baker</span>
+      <div className="text-center text-sm text-neutral-400">
+        <p>© {new Date().getFullYear()} Randall Liao. All rights reserved.</p>
+        <p className="mt-1">
+          Licensed under the <span className="text-white font-semibold">MIT License</span>.
+        </p>
+      </div>
     </div>
   </div>
 ));

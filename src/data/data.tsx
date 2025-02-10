@@ -2,31 +2,13 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -44,8 +26,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Randall Liao Resume',
+  description: 'Resume of Randall Liao – Software Engineer, Research Assistant, and Teaching Assistant',
 };
 
 /**
@@ -69,18 +51,15 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Randall Liao.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I am a versatile engineer with experience as a Research Assistant, Teaching Assistant, and Software Development
+        Engineer.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I specialize in developing scalable software solutions and driving innovation in cloud-native environments.
       </p>
     </>
   ),
@@ -104,16 +83,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description:
+    'I am a dedicated and versatile engineer with hands-on experience in research, teaching, and software development. I have led teams, optimized processes, and delivered scalable, cloud-native solutions. Passionate about continuous learning and innovation.',
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Toronto, ON', Icon: MapIcon},
+    {label: 'Education', text: 'University of Toronto, Rutgers University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Shenzhen Rural Commercial Bank, University of Toronto', Icon: BuildingOffice2Icon},
+    {label: 'Interests', text: 'Software Development, Research, Teaching', Icon: SparklesIcon},
   ],
 };
 
@@ -122,241 +98,193 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      {name: 'Java', level: 9},
+      {name: 'Python', level: 8},
+      {name: 'SQL', level: 8},
+      {name: 'PL/SQL', level: 7},
+      {name: 'Bash', level: 7},
+      {name: 'JavaScript', level: 8},
+      {name: 'Groovy', level: 7},
+      {name: 'C', level: 8},
+      {name: 'C++', level: 7},
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Frameworks & Tools',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      {name: 'Spring Boot', level: 9},
+      {name: 'JUnit', level: 8},
+      {name: 'Mockito', level: 8},
+      {name: 'Tomcat', level: 8},
+      {name: 'Oracle', level: 8},
+      {name: 'JMeter', level: 7},
+      {name: 'Nginx', level: 7},
+      {name: 'Docker', level: 9},
+      {name: 'CI/CD', level: 8},
+      {name: 'JSON', level: 8},
+      {name: 'REST API', level: 9},
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Cloud & Distributed Systems',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      {name: 'AWS', level: 9},
+      {name: 'GCP', level: 8},
+      {name: 'Kubernetes', level: 8},
+      {name: 'Redis', level: 8},
+      {name: 'Kafka', level: 8},
+      {name: 'RabbitMQ', level: 7},
+      {name: 'Blockchain', level: 6},
+      {name: 'NoSQL', level: 7},
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Certifications & Patents',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      {name: 'AWS Certified Solution Architect', level: 10},
+      {name: 'Yogurt Fermentation Patent (CN201721005435.0)', level: 10},
     ],
   },
 ];
 
 /**
  * Portfolio section
+ * (Not used – leave empty)
  */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
-];
+export const portfolioItems: PortfolioItem[] = [];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
+// Education timeline
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Jan 2025',
+    location: 'Toronto, ON',
+    title: 'M.Eng in Electrical and Computer Engineering',
+    content: <p>University of Toronto</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'May 2020',
+    location: 'New Brunswick, NJ',
+    title: 'BS in Management Information Systems & Supply Chain Management',
+    content: <p>Rutgers, The State University of New Jersey</p>,
   },
 ];
 
+// Experience timeline (Work section)
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Sep 2024 - Jan 2025',
+    location: 'Toronto, ON',
+    title: 'Research Assistant, University Of Toronto',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc ml-6 space-y-2">
+        <li>
+          Developed end-to-end tests for a cloud-native tool for pharmacogenetic analysis on Google Cloud using Google
+          Kubernetes Engine, Cloud Storage, Cloud Logging, GitLab CI/CD, and Python.
+        </li>
+        <li>
+          Refactored over 20 duplicated Python test scripts into cohesive, reusable modules employing various design
+          patterns.
+        </li>
+        <li>
+          Integrated Google Cloud Code into the container runtime to enable auto-sync of code changes with remote K8S
+          pods, eliminating the need to rerun a 50-minute CI/CD pipeline for deployments.
+        </li>
+        <li>
+          Enabled remote debugging for containerized Python applications with Skaffold, replacing print statements with
+          full debugging capabilities including breakpoints and step-through execution.
+        </li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Dec 2023 - Jan 2025',
+    location: 'Toronto, ON',
+    title: 'Teaching Assistant, University Of Toronto',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc ml-6 space-y-2">
+        <li>
+          Software Design: Guided 6 teams on their Java projects, mentoring students in object-oriented design, version
+          control, unit testing, refactoring, and design patterns.
+        </li>
+        <li>Software Tools and Systems Programming: Hosted lab sessions on C language and system programming.</li>
+        <li>
+          Engineering Economic Analysis & Entrepreneurship: Tutored over 120 engineering students in business,
+          economics, and entrepreneurship concepts.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jul 2020 - Aug 2023',
+    location: 'Shenzhen, China',
+    title: 'Software Development Engineer, Shenzhen Rural Commercial Bank',
+    content: (
+      <ul className="list-disc ml-6 space-y-2">
+        <li>
+          Led a team of six developers in an agile project, collaborating with design, business, and engineering teams
+          to ensure consistent high-quality technical deliveries.
+        </li>
+        <li>
+          Identified critical improvements in DevOps, software engineering, and system architecture; established
+          standards and best practices; built CI/CD tools, shared Java modules, and maintained a team Wiki.
+        </li>
+        <li>
+          Migrated a Java monolithic application to a containerized microservices architecture using a lift-and-shift
+          strategy, integrating with Spring Cloud and cloud-native features to eliminate 1 hour/week of maintenance
+          downtime and increase throughput by 300%.
+        </li>
+        <li>
+          Engineered a Java push notification pipeline processing over 30,000 notifications daily by integrating data
+          from Kafka, RESTful APIs, and an Enterprise Service Bus.
+        </li>
+        <li>
+          Implemented an auditing microservice with Spring AOP for RESTful APIs, capable of handling 1000 RPS per
+          instance, and enhanced performance by integrating a write-optimized LSM database, saving $10,000 annually in
+          Oracle licensing costs.
+        </li>
+        <li>
+          Transformed an overnight batch process into a real-time streaming pipeline using change data capture, Apache
+          Flink, Kafka, and OLAP databases, reducing data latency from hours to seconds.
+        </li>
+        <li>
+          Led the development of backup and disaster recovery planning with an RPO of 5 seconds and RTO of 2 hours,
+          successfully meeting objectives during a data center power outage caused by flooding.
+        </li>
+      </ul>
     ),
   },
 ];
 
 /**
  * Testimonial section
+ * (Not used – leave empty)
  */
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
+  imageSrc: '',
+  testimonials: [],
 };
 
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out via email or LinkedIn.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'randall.y.liao@gmail.com',
+      href: 'mailto:randall.y.liao@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Toronto, ON',
+      href: 'https://www.google.com/maps/place/Toronto,+ON',
     },
   ],
 };
@@ -365,9 +293,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/randall-y-liao'},
 ];
