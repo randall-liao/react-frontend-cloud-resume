@@ -6,6 +6,6 @@ COPY . .
 RUN yarn build
 
 
-FROM nginx:alpine as RUNNER
+FROM nginx:alpine AS runner
 COPY --from=builder /app/out /usr/share/nginx/html
 EXPOSE 80
