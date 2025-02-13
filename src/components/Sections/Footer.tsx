@@ -20,8 +20,8 @@ const Footer: FC = memo(() => (
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 focus:outline-none focus:ring-2 hover:ring-yellow transition-all duration-300 ease-in-out"
         href="https://github.com/randall-liao/react-frontend-cloud-resume"
-        target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+        target="_blank">
         <BoltIcon className="h-5 w-5 text-yellow" />
         <span className="text-sm">
           The source code for this website is available on <span className="text-white font-semibold">GitHub</span>.

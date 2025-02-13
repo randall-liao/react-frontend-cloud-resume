@@ -1,6 +1,5 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
   BuildingOffice2Icon,
   MapIcon,
   SparklesIcon,
@@ -26,8 +25,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Randall Liao Resume',
-  description: 'Resume of Randall Liao – Software Engineer, Research Assistant, and Teaching Assistant',
+  title: 'Randall Liao Cloud Resume',
+  description: 'Resume of Randall Liao – Software Engineer, AWS Certified Solution Architect',
 };
 
 /**
@@ -55,25 +54,19 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a versatile engineer with experience as a Research Assistant, Teaching Assistant, and Software Development
-        Engineer.
+        This section needs some intro to finish.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I specialize in developing scalable software solutions and driving innovation in cloud-native environments.
+        This section needs some intro to finish.
       </p>
     </>
   ),
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
+
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
-      primary: false,
+      primary: true,
     },
   ],
 };
@@ -84,11 +77,11 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description:
-    'I am a dedicated and versatile engineer with hands-on experience in research, teaching, and software development. I have led teams, optimized processes, and delivered scalable, cloud-native solutions. Passionate about continuous learning and innovation.',
+    'I am a dedicated and versatile engineer with hands-on experience in software engineering and making fun staff. I have led teams, optimized processes, and delivered scalable, cloud-native solutions. Passionate about continuous learning and innovation.',
   aboutItems: [
     {label: 'Location', text: 'Toronto, ON', Icon: MapIcon},
-    {label: 'Education', text: 'University of Toronto, Rutgers University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Shenzhen Rural Commercial Bank, University of Toronto', Icon: BuildingOffice2Icon},
+    {label: 'Education', text: 'University of Toronto, Master of Computer Engineering', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Actively seeking full-time software engineer position', Icon: BuildingOffice2Icon},
     {label: 'Interests', text: 'Software Development, Research, Teaching', Icon: SparklesIcon},
   ],
 };
@@ -100,10 +93,10 @@ export const skills: SkillGroup[] = [
   {
     name: 'Programming Languages',
     skills: [
-      {name: 'Java', level: 9},
-      {name: 'Python', level: 8},
-      {name: 'SQL', level: 8},
-      {name: 'PL/SQL', level: 7},
+      {name: 'Java', level: 10},
+      {name: 'Python', level: 10},
+      {name: 'SQL', level: 10},
+      {name: 'PL/SQL', level: 10},
       {name: 'Bash', level: 7},
       {name: 'JavaScript', level: 8},
       {name: 'Groovy', level: 7},
@@ -163,13 +156,13 @@ export const education: TimelineItem[] = [
   {
     date: 'Jan 2025',
     location: 'Toronto, ON',
-    title: 'M.Eng in Electrical and Computer Engineering',
+    title: 'Master of Engineering in Electrical and Computer Engineering',
     content: <p>University of Toronto</p>,
   },
   {
     date: 'May 2020',
-    location: 'New Brunswick, NJ',
-    title: 'BS in Management Information Systems & Supply Chain Management',
+    location: 'United States of America, New Jersey',
+    title: 'Bachelor of Science in Management Information Systems',
     content: <p>Rutgers, The State University of New Jersey</p>,
   },
 ];
@@ -274,12 +267,12 @@ export const testimonial: TestimonialSection = {
  */
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out via email or LinkedIn.',
+  description: 'Feel free to reach out via LinkedIn.',
   items: [
     {
-      type: ContactType.Email,
-      text: 'randall.y.liao@gmail.com',
-      href: 'mailto:randall.y.liao@gmail.com',
+      type: ContactType.LinkedIn,
+      text: 'linkedin.com/in/randall-y-liao',
+      href: 'https://www.linkedin.com/in/randall-y-liao',
     },
     {
       type: ContactType.Location,

@@ -2,6 +2,7 @@
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
+  output: 'export', // This is the key!
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
@@ -24,6 +25,8 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
+    unoptimized: true,
+    // remotePatterns: [], // Best practice: use local images
     remotePatterns: [
       {
         protocol: 'https',
