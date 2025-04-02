@@ -54,10 +54,10 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        This section needs some intro to finish.
+        Welcome to my over-engineered cloud resume!
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        This section needs some intro to finish.
+        An over-engineered cloud-native resume showcasing DevOps, full-stack development, and scalable cloud architecture.
       </p>
     </>
   ),
@@ -77,12 +77,14 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description:
-    'I am a dedicated and versatile engineer with hands-on experience in software engineering and making fun staff. I have led teams, optimized processes, and delivered scalable, cloud-native solutions. Passionate about continuous learning and innovation.',
+    'Technology has always been a driving force in my life. Growing up in the world’s largest electronic market, I was constantly surrounded by innovation. This environment sparked my curiosity and led me to explore decentralized systems. In 2012, as a middle school student, I discovered Bitcoin. Seeing firsthand how rapidly technology can reshape industries and societies, I became deeply interested in scalable and resilient systems.\n' +
+    '\n' +
+    'As a Software Engineer and Cloud Architect, I am passionate about building solutions that push the limits of cloud computing and system architecture. My goal is to create efficient and transformative technologies that drive meaningful change in the digital world.',
   aboutItems: [
     {label: 'Location', text: 'Toronto, ON', Icon: MapIcon},
     {label: 'Education', text: 'University of Toronto, Master of Computer Engineering', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Actively seeking full-time software engineer position', Icon: BuildingOffice2Icon},
-    {label: 'Interests', text: 'Software Development, Research, Teaching', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Software Development, Cloud Computing, ', Icon: SparklesIcon},
   ],
 };
 
