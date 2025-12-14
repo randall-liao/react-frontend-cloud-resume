@@ -26,7 +26,7 @@
 
 ### 🎉 Version 2 is here! New features:
 1. Completely rebuilt with React and full typescript support
-2. Built on the [Next.js](https://nextjs.org/) framework for easy server side rendering/static generation, image optimization, api routes, and deployment
+2. Built on the [Next.js](https://nextjs.org/) framework for static site generation, image optimization, and easy deployment to AWS S3/CloudFront
 3. Styled entirely with [TailwindCss](https://tailwindcss.com/)
 4. Re-organized data population file for customizing site.
 5. Significant improvement/modernization of all site sections
@@ -35,7 +35,7 @@
 
 ## Description
 
-This is a React based personal resume website template. Built with typescript on the Next.js framework, styled with Tailwind css, and populated with data from a single file, you can easily create, customize and host your own personal website in minutes. Even better, the site is fully mobile-optimized and server-side rendered to ensure fast loading and a clean UI on any device. Read on to learn how to make it your own.
+This is a React based personal resume website template. Built with typescript on the Next.js framework, styled with Tailwind css, and populated with data from a single file, you can easily create, customize and host your own personal website in minutes. Even better, the site is fully mobile-optimized and statically generated to ensure fast loading and a clean UI on any device. It is designed to be hosted on AWS S3 with CloudFront for content delivery. Read on to learn how to make it your own.
 
 ## Make it Your Own!
 
@@ -62,9 +62,9 @@ Due to the variety of options available for contact form providers, I've hooked 
 
 Of course, all of the code is there and nothing is hidden from you so if you would like to make any other styling/data changes, feel free!
 
-### 7. Deploy to Vercel and enjoy your new Resume Website
+### 7. Build and Deploy
 
-Deploying your new site to Vercel is simple, and can be done by following their guide [here.](https://vercel.com/guides/deploying-nextjs-with-vercel) When you're all done and the build succeeds, you should be given a url for your live site, go there and you'll see your new personal resume website! Congratulations!
+To build the project for production, run `yarn build`. This will generate a static export of the website in the `out` directory. You can then upload the contents of the `out` directory to an AWS S3 bucket and configure a CloudFront distribution to serve the website globally.
 
 ## Project Created & Maintained By
 
