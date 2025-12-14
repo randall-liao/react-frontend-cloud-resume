@@ -1,9 +1,4 @@
-import {
-  AcademicCapIcon,
-  BuildingOffice2Icon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
+import {AcademicCapIcon, BuildingOffice2Icon, MapIcon, SparklesIcon} from '@heroicons/react/24/outline';
 
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
@@ -53,16 +48,14 @@ export const heroData: Hero = {
   name: `I'm Randall Liao.`,
   description: (
     <>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Welcome to my over-engineered cloud resume!</p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Welcome to my over-engineered cloud resume!
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        An over-engineered cloud-native resume showcasing DevOps, full-stack development, and scalable cloud architecture.
+        An over-engineered cloud-native resume showcasing DevOps, full-stack development, and scalable cloud
+        architecture.
       </p>
     </>
   ),
   actions: [
-
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
