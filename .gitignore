@@ -35,3 +35,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# agent
+.agent/
+port_forward.py
